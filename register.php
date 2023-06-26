@@ -1,23 +1,36 @@
-<?php include('./includes/header.php'); ?>
+<?php
+include('./includes/functions.php'); 
+// head
+echo head('register');
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="container my-5" style="max-width: 400px;">
-        <div class="errorMessage"></div>
-        <div class="h3 text-center mb-1">Sign Up Now</div>
-        <form class="card p-3 mt-4" id="signup-form" method="POST">
-          <div class="mb-3 form-floating">
-            <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="First Name" name="fname" required>
-            <label for="fname" class="form-label">First Name</label>
+// header
+include('./includes/header.php');
+
+?>
+
+<body class="container d-flex justify-content-center my-3">
+  <div class="card mb-3" style="max-width: 750px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div class="container my-5 px-3" style="max-width: 400px;">
+          <form class="card p-3 mt-4" id="signup-form" method="POST">
+            <div width='100%' class="h3 d-flex justify-content-between align-items-center">Sign Up</div>
+            <div class="p text-secondary my-2">Please enter your signup details</div>
+            <div class="mb-3 form-floating">
+            <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
+            <label for="username" class="form-label">UserName</label>
           </div>
           <div class="mb-3 form-floating">
-            <input type="text" class="form-control" id="lname" aria-describedby="emailHelp" placeholder="Last Name" name="lname" required>
-            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="fullname" placeholder="Last Name" name="fullname" required>
+            <label for="fullname" class="form-label">Full Name</label>
           </div>
           <div class="mb-3 form-floating">
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email address" name="email">
+            <input type="email" class="form-control" id="email" placeholder="Email address" name="email">
             <label for="email" class="form-label">Email address</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input type="tel" class="form-control" id="phone" placeholder="phone address" name="phone">
+            <label for="phone" class="form-label">Phone</label>
           </div>
           <div class="mb-3 form-floating">
             <input type="password" class="form-control" id="password" placeholder="Password" style="position: relative;" name="password">
@@ -33,16 +46,15 @@
             <div id="emailHelp" class="form-text">Already have an account? <a href="./login.php">Login</a></div>
           </div>
           <button type="submit" name="signup" class="btn btn-success">sign up</button>
+          <p class="form-text">Are you a rental company? <a href="register_rental_company.php">Register as a rental company</a></p>
         </form>
       </div>
     </div>
-    <div class="col-md-4">
-      <svg class="bd-placeholder-img img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text>
-      </svg>
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <img src="./images/signup-banner.jpg" alt="img" class="card-img" style="height: 100%;border-radius: 0;">
     </div>
   </div>
 </div>
 
+</body>
 <?php include('./includes/footer.php'); ?>
