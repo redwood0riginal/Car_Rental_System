@@ -9,3 +9,172 @@
   right: 20px;
   cursor: pointer;
 }
+
+/*footer styling*/
+
+
+li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+li:hover {
+  opacity: 0.8;
+}
+
+footer {
+  position: relative;
+  background-color: #b8b8b834;
+  color: #000000;
+  padding: 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h2 {
+  color: rgb(9, 150, 131);
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(9, 150, 131);
+}
+
+.info {
+  margin-bottom: 40px;
+}
+
+.info img {
+  width: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.info p {
+  width: 220px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info p:nth-child(3) {
+  font-size: 30px;
+}
+
+.info a {
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.info a:hover {
+  color: rgb(9, 150, 131);
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+
+.navigation li a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+  color: #bbb;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  width: 300px;
+}
+.subscribe p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe .fa-arrow-right {
+  margin-left: -20px;
+  color: #000000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.subscribe .fa-arrow-right:hover {
+  color: #bbb;
+}
+
+.subscribe ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe li {
+  margin: 0 10px;
+}
+
+.subscribe i {
+  color: #000000;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.subscribe .fa-linkedin:hover {
+  color: #0072b1;
+}
+.subscribe .fa-facebook:hover {
+  color: #0b44ba;
+}
+.subscribe .fa-instagram:hover {
+  color: #e4405f;
+}
+.subscribe .fa-twitter:hover {
+  color: #1da1f2;
+}
+.copy {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
